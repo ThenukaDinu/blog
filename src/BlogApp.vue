@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Header />
-    <router-view />
+    <TheHeader />
+    <router-view :key="$route.path"/>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
+import TheHeader from "@/components/TheHeader";
 export default {
   name: "BlogApp",
   components: {
-    Header
+    TheHeader
   }
 };
 </script>

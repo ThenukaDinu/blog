@@ -12,28 +12,30 @@
       :show="collapsed"
       navbar
     >
-      <CNavbarBrand href="#">
-        <router-link
-          to="/"
-          exact
-        >
-          NavBar
-        </router-link>
-      </CNavbarBrand>
       <CNavbarNav>
+        <CNavbarBrand>
+          <router-link
+            :to="{ name: 'Home' }"
+            exact
+          >
+            NavBar
+          </router-link>
+        </CNavbarBrand>
+       
+       
         <CNavItem>
           <router-link 
-            to="/trending"
-          > 
+            :to="{ name: 'TrendingPosts' }"
+          >
             Trainding News
           </router-link>
         </CNavItem>
-      </CNavbarNav>
-      <CNavbarNav>
+        
+       
         <CNavItem>
           <router-link 
-            to="/about"
-          > 
+            :to="{ name: 'About' }"
+          >
             About
           </router-link>
         </CNavItem>
@@ -91,3 +93,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+a {
+  text-decoration: none !important;
+  color: #000;
+}
+
+a .blog-nav-item-active {
+  color: lightgreen !important;
+}
+</style>
