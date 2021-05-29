@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    Hello World
+    <Header />
+    <router-view />
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header";
 export default {
-  name: "BlogApp"
+  name: "BlogApp",
+  components: {
+    Header
+  }
 };
 </script>
 
-<style></style>
+<style lang="scss">
+@import "@/assets/styles/scss/blogApp";
+</style>
