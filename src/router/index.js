@@ -25,11 +25,11 @@ export default new Router({
             name: 'TrendingPosts',
             component: TrendingNews
         },
-        ,
         {
             path: '/post/:postId',
             name: 'BlogPost',
-            component: BlogPost
+            component: BlogPost,
+            props: true,
         }
     ]
 })

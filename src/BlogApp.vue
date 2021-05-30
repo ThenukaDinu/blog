@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <TheHeader />
-    <router-view :key="$route.path"/>
+    <CContainer fluid class="px-4">
+      <router-view :key="$route.path" />
+    </CContainer>
   </div>
 </template>
 

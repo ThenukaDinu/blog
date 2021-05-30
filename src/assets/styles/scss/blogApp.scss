@@ -1,11 +1,5 @@
-
-
 @import "~@coreui/coreui/scss/coreui";
 
-// * {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//     font-family: Roboto;
-//     background: #FFF;
-// }
+body {
+    background: $light
+}

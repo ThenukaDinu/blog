@@ -1,27 +1,25 @@
 <template>
   <div>
     <h2>Post Title</h2>
-    <h4>PostId {{ $route.params.postId }}</h4>
+    <h4>PostId {{ postId }}</h4>
     <p>article</p>
   </div>
 </template>
 
 <script>
-name: 'BlogPost'
 export default {
+  name: "BlogPost",
   props: {
-    id: {
-      type: Number,
+    postId: {
+      type: Object,
       required: true
     }
   },
-  data () {
-    return {
-    }
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style>
-
 </style>
