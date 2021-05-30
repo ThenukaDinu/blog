@@ -6,6 +6,9 @@
         class="h4"
       >{{ `${post.postTitle.substring(0,50)}${post.postTitle.length > 50 && '...'}` }}</CCardHeader>
       <CCardBody>
+        <div class="pb-3">
+          <CImg :src="`https://picsum.photos/1024/480/?image=${post.postId+11}`"  fluid/>
+        </div>
         <div>{{ post.postContents[0].content.substring(0,150) }}</div>
       </CCardBody>
       <CCardFooter
@@ -52,5 +55,7 @@ export default {
 
 .card-footer:hover {
   cursor: pointer;
+}
+.post-image {
 }
 </style>

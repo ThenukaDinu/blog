@@ -31,5 +31,18 @@ export default new Router({
             component: BlogPost,
             props: true,
         }
-    ]
+    ],
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        }
+        const position = {}
+        if (to.hash) {
+            position.selector = to.hash;
+            if (document.querySelector(to.hash)) {
+                return position;
+            }
+            return false;
+        }
+    }
 })
