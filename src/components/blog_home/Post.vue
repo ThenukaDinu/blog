@@ -37,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  border: 1px solid gray;
+  border: 1px solid rgb(187, 187, 187);
   &:hover .card-header {
     opacity: 0.93;
   }
@@ -46,7 +46,7 @@ export default {
   }
   &:hover {
     opacity: 0.93;
-    border: 0.5px solid #fff;
+    border-color: #000;
   }
 }
 

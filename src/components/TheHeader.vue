@@ -7,7 +7,7 @@
           <router-link :to="{ name: 'Home' }" exact>News 365</router-link>
         </CNavbarBrand>
         <CNavItem>
-          <router-link :to="{ name: 'TrendingPosts' }">Trainding News</router-link>
+          <router-link :to="{ name: 'TrendingPosts' }">Trending News</router-link>
         </CNavItem>
         <CNavItem>
           <router-link :to="{ name: 'About' }">About</router-link>

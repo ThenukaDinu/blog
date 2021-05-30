@@ -2,7 +2,9 @@
   <div id="app">
     <TheHeader />
     <CContainer fluid class="px-4">
-      <router-view :key="$route.path" />
+      <transition name="fade" mode="fade-in">
+        <router-view :key="$route.path" />
+      </transition>
     </CContainer>
   </div>
 </template>
