@@ -1,5 +1,7 @@
 # blog
 
+### see [Live Demo](https://news365.netlify.app)
+
 ## Project setup
 ```
 npm install
